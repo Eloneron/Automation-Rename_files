@@ -4,12 +4,12 @@
 import os
 
 # what we want to replace
-search = "Name"
-replace = "Shit"
+search = "File"
+replace = "Text"
 extension = '.txt'
 
 # get files from given directory
-os.chdir('./files')
+os.chdir('./files')   # change directory
 print(f'Current working directory: {os.getcwd()}')
 dir_content = os.listdir('.')   # '.' - current dir
 docs = [doc for doc in dir_content if os.path.isfile(doc)]
